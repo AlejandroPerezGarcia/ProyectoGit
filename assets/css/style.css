@@ -1,0 +1,9 @@
+section {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 992px;
+    align-items: center;
+    margin-top: 25px;
+    padding-right: 10px;
+}
+
