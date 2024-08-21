@@ -22,8 +22,8 @@ form.addEventListener('submit', function(event){
     const card = document.createElement('div');
     equiposFutbol.forEach(equipo =>{
             card.innerHTML = `
-            <div class="container">
-             <div class="card" style="width: 18rem;">
+            <div class="col">
+             <div class="card cardEquipos">
                 <img src=${imagen} class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${nombreEquipo}</h5>
@@ -39,3 +39,5 @@ form.addEventListener('submit', function(event){
     })
   
 })
+
+//style="width: 18rem;

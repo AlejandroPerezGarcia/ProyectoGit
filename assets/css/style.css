@@ -1,9 +1,6 @@
-section {
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 992px;
-    align-items: center;
-    margin-top: 25px;
-    padding-right: 10px;
+.cardEquipos{
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
-
