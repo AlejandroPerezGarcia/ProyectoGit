@@ -4,3 +4,13 @@
     margin-right: 20px;
     margin-top: 10px;
 }
+
+
+.cardAutos{
+    height: 450px;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
