@@ -1,58 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina de Auto</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-secondary shadow">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Grupo 5 :</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/equipos.html"
-                >Equipos de fútbol</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="formulario.html"
-                >formulario</a
-              >
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagina de Auto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-secondary shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Grupo 5 :</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/equipos.html">Equipos de fútbol</a>
+          </li>
+          <li>
+            <a class="nav-link active" aria-current="page" href="formulario.html">formulario</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+   
     <!-- inicio carousel - @mbatlle -->
     <div name="carousel" class="container">
       <div id="carouselExampleIndicators" class="carousel slide">
@@ -83,11 +64,64 @@
       </div>
     </div>
     <!-- fin carousel -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/script3.js"></script>
-  </body>
+    <!-- inicio card -->
+     <section id="autosDestacados" class="p-3">
+    <div class="row text-center mb-3">
+      <h2 class>Autos destacados</h2>
+    </div>    
+    <div class="container d-flex justify-content-evenly">
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-4 mb-2 ">
+          <div class="card cardAutos" style="width: 18rem;">
+            <img src="./assets/img/auto-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Toyota Raize</h5>
+              <p class="card-text">En cuanto a su rendimiento, es ideal para ciudad, con 15,4 km/l. En tanto, en
+                carretera alcanza 21,3 km/l, mientras que mixto 18,9 km/l.</p>
+            </div>
+            <div class="card-footer text-body-secondary">
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="Toyota Raize">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-2 ">
+          <div class="card cardAutos" style="width: 18rem;">
+            <img src="./assets/img/auto-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Suzuki Fronx </h5>
+              <p class="card-text">Con dimensiones que no sobrepasan las de un compacto, es un auto ideal para la vida
+                urbana con 3.995 mm de largo, los 1.550 mm de alto y un ancho de 1.765 mm.</p>
+            </div>
+            <div class="card-footer text-body-secondary">
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="Suzuki Fronx">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-2 ">
+          <div class="card cardAutos" style="width: 18rem;">
+            <img src="./assets/img/auto-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Honda HR-V</h5>
+              <p class="card-text">El nuevo CR-V es más que un vehículo, es un compañero de viaje que le brinda seguridad y protección en cada trayecto.</p>
+            </div>
+            <div class="card-footer text-body-secondary">
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="Honda HR-V">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--fin card -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/script3.js">
+  </script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
 </html>
+
