@@ -1,119 +1,336 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Git</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
+<html lang="en">
 
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-secondary shadow">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Grupo 5 :</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/equipos.html"
-                >Equipos de fútbol</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="formulario.html"
-                >formulario</a
-              >
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagina de Auto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-scroll fixed-top shadow-0 border-bottom border-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Grupo 5 :)</a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="equipos.html">Equipos de fútbol</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Marcas de autos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  <!-- inicio carousel - @mbatlle -->
+  <div name="carousel" class="container">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/slide-3.jpg" class="d-block w-100" alt="imagen de vehículo Honda WR-V 2025" />
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/slide-2.jpg" class="d-block w-100" alt="imagen oferta garantía de 5 años" />
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/slide-1.jpg" class="d-block w-100"
+            alt="imagen de 4 autos divididos y con fondos de distintos colores" />
         </div>
       </div>
-    </nav>
-    <table class="table container mt-5">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Apellido</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Daniel</td>
-          <td>Moraga</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Luis</td>
-          <td>Urzua</td>
-          <td>@lurzua</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Max</td>
-          <td>Batlle</td>
-          <td>???</td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>Camila</td>
-          <td>Hernández</td>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="row">5</th>
-          <td>Claudia</td>
-          <td>Barria</td>
-          <td>claudiabarriagenta@gmail.com</td>
-        </tr>
-        <tr>
-          <th scope="row">6</th>
-          <td>Claudio</td>
-          <td>Castillo</td>
-          <td>claudiocastillo1506@gmail.com</td>
-        </tr>
-        <tr>
-          <th scope="row">7</th>
-          <td>Alejandro</td>
-          <td>Perez</td>
-          <td>Alejandro8001@gmail.com</td>
-        </tr>
-      </tbody>
-    </table>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- fin carousel -->
+  <!-- inicio card -->
+  <section id="autosDestacados" class="p-3">
+    <div class="row text-center mb-3">
+      <h2 class>Autos destacados</h2>
+    </div>
+    <div class="container d-flex justify-content-evenly">
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-4 mb-2">
+          <div class="card cardAutos" style="width: 18rem">
+            <img src="./assets/img/auto-1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Toyota Raize</h5>
+              <p class="card-text">
+                En cuanto a su rendimiento, es ideal para ciudad, con 15,4
+                km/l. En tanto, en carretera alcanza 21,3 km/l, mientras que
+                mixto 18,9 km/l.
+              </p>
+            </div>
+            <div class="card-footer text-body-secondary">
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="Toyota Raize">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-2">
+          <div class="card cardAutos" style="width: 18rem">
+            <img src="./assets/img/auto-2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Suzuki Fronx</h5>
+              <p class="card-text">
+                Con dimensiones que no sobrepasan las de un compacto, es un
+                auto ideal para la vida urbana con 3.995 mm de largo, los
+                1.550 mm de alto y un ancho de 1.765 mm.
+              </p>
+            </div>
+            <div class="card-footer text-body-secondary">
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="Suzuki Fronx">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 mb-2">
+          <div class="card cardAutos" style="width: 18rem">
+            <img src="./assets/img/auto-2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Honda HR-V</h5>
+              <p class="card-text">
+                El nuevo CR-V es más que un vehículo, es un compañero de viaje
+                que le brinda seguridad y protección en cada trayecto.
+              </p>
+            </div>
+            <div class="card-footer text-body-secondary">
+              <a href="#" data-bs-toggle="tooltip" data-bs-title="Honda HR-V">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--fin card -->
+  <!-- inicio acordion-->
+  <div class="container-fluid my-5">
+    <h2 class="mb-5 text-center">Modelos destacados</h2>
+
+    <div class="container-fluid mb-4 mb-md-5">
+      <div class="row">
+        <div class="col-10 col-md-4 accordion mx-auto ms-md-auto me-md-4 mb-4 mb-md-0" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                MODELO 1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It
+                is shown by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-1">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOneOne" aria-expanded="true" aria-controls="collapseOneOne">
+                MODELO 1.1
+              </button>
+            </h2>
+            <div id="collapseOneOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It
+                is shown by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-4 accordion mx-auto ms-md-4 me-md-auto" id="accordionExampleTwo">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                MODELO 2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExampleTwo">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It
+                is shown by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-1">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwoOne" aria-expanded="true" aria-controls="collapseTwoOne">
+                MODELO 2.1
+              </button>
+            </h2>
+            <div id="collapseTwoOne" class="accordion-collapse collapse" data-bs-parent="#accordionExampleTwo">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It
+                is shown by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-10 col-md-4 accordion mx-auto ms-md-auto me-md-4 mb-4 mb-md-0" id="accordionExampleThree">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                aria-expanded="true" aria-controls="collapseThree">
+                MODELO 3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExampleThree">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It
+                is shown by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-1">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThreeOne" aria-expanded="true" aria-controls="collapseThreeOne">
+                MODELO 3.1
+              </button>
+            </h2>
+            <div id="collapseThreeOne" class="accordion-collapse collapse" data-bs-parent="#accordionExampleThree">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It
+                is shown by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-4 accordion mx-auto ms-md-4 me-md-auto mb-4 mb-md-0" id="accordionExampleFour">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                aria-expanded="true" aria-controls="collapseFour">
+                MODELO 4
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExampleFour">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It
+                is shown by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-1">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFourOne" aria-expanded="true" aria-controls="collapseFourOne">
+                MODELO 4.1
+              </button>
+            </h2>
+            <div id="collapseFourOne" class="accordion-collapse collapse" data-bs-parent="#accordionExampleFour">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It
+                is shown by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin acordion-->
+  <!-- inicio footer-->
+  <div class="container mt-5">
+    <div class="contactanos">
+      <h3>Contáctanos</h3>
+      <button type="button" class="btn btn-warning">Aquí</button>
+    </div>
+    <div class="container mt-5">
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Automotora XYZ</h3>
+            <p>&copy; 2024 Automotora XYZ. Todos los derechos reservados.</p>
+            <address>
+              <p>Dirección: Av. Las Industria 1234, Puerto Montt, Chile</p>
+              <p>Teléfono: +123 456 789</p>
+              <p>Email: contacto@automotoraxyz.com</p>
+            </address>
+          </div>
+          <div class="footer-links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Vehículos</a></li>
+              <li><a href="#">Servicios</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- fin footer-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+      <script src="./assets/js/script3.js"></script>
+      <script>
+        const tooltipTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="tooltip"]'
+        );
+        const tooltipList = [...tooltipTriggerList].map(
+          (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
+      </script>
+</body>
+
 </html>

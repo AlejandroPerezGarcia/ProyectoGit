@@ -1,16 +1,137 @@
-.cardEquipos{
-    width: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
+body{
+  padding: 70px;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: #f8db8a;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.navbar-brand {
+  font-size: unset;
+  height: 3.5rem;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.cardEquipos {
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.cardAutos {
+  height: 450px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.contactanos {
+  padding: 30px;
+  border: 2px solid #333;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer {
+  background-color: #333; /* Color de fondo oscuro para el footer */
+  color: #fff; /* Color del texto blanco */
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+  flex: 1;
+}
+
+.footer-info h3 {
+  margin-top: 0;
+}
+
+.footer-info address {
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  margin-top: 0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-social a:hover {
+  text-decoration: underline;
 }
 
 
-.cardAutos{
-    height: 450px;
-}
-
-a{
-    text-decoration: none;
-    color: gray;
-}
